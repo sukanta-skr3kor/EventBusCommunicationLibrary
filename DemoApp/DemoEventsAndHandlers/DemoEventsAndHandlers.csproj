@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EventBus.Abstraction\EventBus.Abstraction\Sukanta.EventBus.Abstraction.csproj" />
+    <ProjectReference Include="..\..\EventBus.Implementation\EventBus.AzureStorageQueue\Sukanta.EventBus.AzureStorageQueue.csproj" />
+  </ItemGroup>
+
+</Project>
